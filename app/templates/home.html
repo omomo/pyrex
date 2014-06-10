@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<br>
+<div class="container">
+
+  <div class ='row buffer'>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          Regular Expression
+        </h3>
+      </div>
+      <div class="panel-body">
+        <input class='regex_string' type='text'>
+      </div>
+    </div>
+  </div>
+
+  <div class ='row buffer'>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          Text
+        </h3>
+      </div>
+      <div class="panel-body">
+        <textarea class='input_string'></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class='row buttons'>
+    <div class="btn-group" data-toggle="buttons">
+      <label class="btn btn-primary">
+        <input type="checkbox" class="multiline_bool"> re.MULTILINE
+      </label>
+      <label class="btn btn-primary">
+        <input type="checkbox" class="dotall_bool"> re.DOTALL
+      </label>
+      <label class="btn btn-primary">
+        <input type="checkbox" class="verbose_bool"> re.VERBOSE
+      </label>
+      <label class="btn btn-primary">
+        <input type="checkbox" class="ignorecase_bool"> re.IGNORECASE
+      </label>
+      <label class="btn btn-primary">
+        <input type="checkbox" class="unicode_bool"> re.UNICODE
+      </label>
+    </div>
+  </div>
+
+  <br>
+  <hr>
+  <br>
+
+  <div class='row buffer col-md-6'>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          Regular Expression Highlights
+        </h3>
+      </div>
+
+      <div class="panel-body highlight">
+      </div>
+    </div>
+  </div>
+
+  <div class='row buffer col-md-6 pull-right'>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          Regular Expression Matches
+        </h3>
+      </div>
+
+      <div class="panel-body match">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <br>
+  <br>
+
+<br>
+<br>
+<br>
+
+<!-- <p class="ajax_disp1"></p>
+<br>
+<p class="ajax_disp2"></p>
+<br>
+<p class="ajax_disp3"></p>
+<br>
+<p class="ajax_disp4"></p>
+<br>
+<p class="ajax_disp5"></p>
+<br>
+<p class="ajax_disp6"></p>
+<br>
+<p class="ajax_disp7"></p>
+<br> -->
+
+</div>
+</div>
+
+{% endblock %}
