@@ -66,3 +66,10 @@ $( "input.regex_string, textarea.input_string, input.multiline_bool, input.dotal
     },
   });
 });
+
+$(document).ready(function() {
+  mixpanel.track('Page Loaded', {
+      'page name' : document.title,
+      'url' : window.location.pathname
+  });
+})
